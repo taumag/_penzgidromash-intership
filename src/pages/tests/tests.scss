@@ -1,0 +1,7 @@
+@import '~mocha/mocha.css';
+
+.tests {
+    &__container#mocha {
+        margin: $col-width;
+    }
+}

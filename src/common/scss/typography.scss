@@ -1,5 +1,41 @@
 @import "./fonts.scss";
 
+@mixin font-1 ($weight: 300) {
+    font-weight: $weight;
+    font-size: 2.94rem; //47px
+    line-height: 70px;
+}
+
+@mixin font-2($weight: normal) {
+    font-weight: $weight;
+    font-size: 1.56rem;  //25px
+    line-height: 40px;
+}
+
+@mixin font-3($color: $main-color) {
+    color: $color;
+    font-size: 10rem; //160px
+    line-height: 160px;
+}
+
+@mixin font-4($color: $color-1) {
+    color: $color;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+@mixin font-5($color: $color-1) {
+    color: $color;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+@mixin font-5($color: $color-1) {
+    color: $color;
+    font-size: 20px;
+    line-height: 36px;
+}
+
 //@mixin font-1 {
 //    $fhd-base-size: 60px;
 //    $tablet-base-size: $fhd-base-size * 0.6;

@@ -11,7 +11,7 @@ class Preloader extends Component {
 
         this.preloading = Promise.all([
             playbackOverPromise(),
-        ]).then(() => delay(1500))
+        ]).then(() => delay(0))
             .then(() => {
                 nGetBody().classList.remove('preloading');
                 nGetBody().style.removeProperty('height');

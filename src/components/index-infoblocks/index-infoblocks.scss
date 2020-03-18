@@ -1,0 +1,115 @@
+.index-infoblocks {
+    $root: &;
+}
+
+.info {
+
+    padding: 0;
+    padding-top: 136px;
+    border: 0.01px transparent;  // на всякий случай
+    color: $color-1;
+    font-family: Gilroy, sans-serif;
+
+    // главный title
+    &__title {
+        font-size: 1.56rem;
+        line-height: 37px;
+        font-weight: 400;
+        margin-bottom: 60px;
+        padding-top: 23px;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        opacity: .5;
+    }
+
+    &block-1 {
+
+        &__img {
+            margin-left: -$col-width;  //сдвигает картинку к краю из-за offset-1
+        }
+
+        &__info-title {
+            @include font-1(normal);
+        }
+
+        &__subtitle {
+            margin-top: 4.27vw;
+            padding-right: 50px;
+            @include font-2(300);
+        }
+
+        &__line-1 {
+            margin-top: 103px !important;
+        }
+    }
+
+    &block-2 {
+        margin-top: 4.69vw;
+
+        &__info-title {
+            @include font-1;
+            margin-bottom: 50px;
+        }
+
+        .info-line__text {
+            padding: 0 $col-width;
+        }
+    }
+
+    &block-3 {
+        margin-top: 5.83vw;
+
+        &__wrapper {
+            display: flex;
+            margin-top: 420px;
+        }
+
+        &__info-title {
+            @include font-1;
+            width: $col-width * 5;
+        }
+
+        &__subtitle {
+            width: $col-width * 5;  // или 6, чтобы было как в макете
+            margin-top: 5px;
+            
+            font-weight: 300;
+            font-size: 1.13rem;
+            line-height: 180%;
+        }
+
+        .infoblock-line {
+            margin-top: 30px;
+        }
+
+        .infoblock-list {
+            margin-top: 12.5vw;
+        }
+    }
+
+    &block-4 {
+        margin-top: 9.38vw;
+
+        &__item-1 {
+            margin-top: -20px;
+        }
+
+        &__item-2 {
+            margin-top: 12.5vw;
+        }
+
+        &__item-3 {
+            margin-top: 12.5vw;
+        }
+    }
+
+    &block-5 {
+        margin-top: 11.98vw;
+        margin-left: 1.15vw;
+    }
+
+
+}

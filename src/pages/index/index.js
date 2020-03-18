@@ -9,6 +9,7 @@ Barba.BaseView.extend({
     async onEnterCompleted() {
         await commonComponents.preloader.preloading;
         objectFitPolyfill();
+        document.querySelector(document.location.hash).scrollIntoView();
     },
     onLeave() {
 

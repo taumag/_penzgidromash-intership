@@ -26,8 +26,8 @@
     &__logo {
         width: smooth-value(220px, 437px, $mobile-min-width, $fhd-width, 'w');
         height: smooth-value(100px, 181px, $mobile-min-height, $fhd-height, 'h');
-        animation-duration: 1s;
-        animation-delay: 1s;
+        animation-duration: 0s;
+        animation-delay: 0s;
         opacity: 0;
         visibility: hidden;
     }

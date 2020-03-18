@@ -1,0 +1,27 @@
+
+.infoblock-list {
+    $root: &;
+    display: flex;
+    flex-direction: column;
+
+    > h3 {
+        @include font-1;
+    }
+
+    &__wrapper {
+        margin-top: 52px;
+        @include font-2;
+    }
+    
+    &__item {
+        height: 101px;
+        border-bottom: 1px solid;
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            border-top: 1px solid;
+        }
+    }
+
+}
